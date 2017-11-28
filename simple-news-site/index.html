@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Index</title>
+</head>
+
+<body>
+    {% extends "base.html" %}
+
+    {% block header %}
+    <h1>Index</h1>
+    {% endblock %}
+
+    {% block content %}
+    {% for title in title_list %}
+    <ul>{{ title }}</ul>
+    {% endfor %}
+    {% endblock %}
+</body>
+
+</html>
