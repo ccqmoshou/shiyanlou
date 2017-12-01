@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Post</title>
+</head>
+
+<body>
+    {% extends "base.html" %}
+
+    {% block header %}
+    <h1>{{ file_content.title }}</h1>
+    {% endblock %}
+
+    {% block content %}
+    <p>{{ file_content.created_time }}</p>
+    <p>{{ file_content.category.name }}</p>
+    <p>{{ file_content.content }}</p>
+    {% endblock %}
+
+</body>
+
+</html>
